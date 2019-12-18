@@ -3,11 +3,19 @@
     <header class="row">
       <div class="col">
         <router-link :to="{ name: 'home' }">
-          <h1>C<img alt="Vue logo" src="../assets/logo.png" />rs</h1>
+          <h1>
+            C
+            <img alt="Vue logo" src="../assets/logo.png" />rs
+          </h1>
         </router-link>
       </div>
     </header>
-    {{ car }}
+    <div>
+      {{ car.make }}
+      {{ car.model }}
+      {{ car.year }}
+      {{ car.price }}
+    </div>
   </div>
 </template>
 
